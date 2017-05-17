@@ -11,6 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', 'dataController@viewAll');
+Route::get('/post/{id}', 'dataController@view');
+Route::get('/post/delete/{id}', 'dataController@delete');
+Route::get('/insert', function (){
+    return view('insert');
 });
+Route::post('/insert/data', 'dataController@insert');
+Route::post('/post/edit/{id}/save', 'dataController@update');
+Route::get('/post/edit/{id}', 'dataController@view');
