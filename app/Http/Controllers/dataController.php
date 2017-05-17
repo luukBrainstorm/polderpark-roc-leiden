@@ -14,7 +14,7 @@ class dataController extends Controller  {
 
         $post->save();
 
-        redirect('/?success=true');
+        return redirect('/?success=true');
     }
 
     public function insert(Request $request) {
