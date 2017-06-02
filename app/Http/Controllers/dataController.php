@@ -45,6 +45,6 @@ class dataController extends Controller  {
     public function viewAll() {
         $posts = postModel::all();
 
-        return view('all', ['posts' => $posts]);
+        return view('index', ['posts' => $posts]);
     }
 }
