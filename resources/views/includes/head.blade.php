@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="nl">
 <head>
@@ -28,7 +29,7 @@
 @section('menu')
     <li><a href="#">Home</a></li>
     <li><a href="#">About</a></li>
-    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">Polderpark</a></li>
     <li><a href="#">Blog</a></li>
     <li><a href="#">Contact</a></li>
 @endsection

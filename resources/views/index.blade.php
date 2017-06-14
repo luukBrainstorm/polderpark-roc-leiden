@@ -1,4 +1,5 @@
 @extends('includes.layout')
+@extends('includes.head')
 
 @section('body')
     @if(app('request')->input('success'))
