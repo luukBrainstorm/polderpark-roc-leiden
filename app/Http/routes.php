@@ -20,3 +20,7 @@ Route::get('/insert', function (){
 Route::post('/insert/data', 'dataController@insert');
 Route::post('/post/edit/{id}/save', 'dataController@update');
 Route::get('/post/edit/{id}', 'dataController@view');
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
