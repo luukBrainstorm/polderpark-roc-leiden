@@ -32,4 +32,5 @@
     <li><a href="#">Polderpark</a></li>
     <li><a href="#">Blog</a></li>
     <li><a href="#">Contact</a></li>
+    <li><a href="/home">admin</a></li>
 @endsection
