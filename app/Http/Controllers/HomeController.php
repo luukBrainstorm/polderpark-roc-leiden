@@ -11,8 +11,6 @@ class HomeController extends Controller
      * Create a new controller instance.
      *
      * @return void
-     *
-     * @TODO: middleware voor controller
      */
     public function __construct()
     {

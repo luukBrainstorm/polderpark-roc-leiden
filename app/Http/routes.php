@@ -24,3 +24,7 @@ Route::get('/post/edit/{id}', 'dataController@view');
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
