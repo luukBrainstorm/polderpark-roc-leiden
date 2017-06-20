@@ -12,7 +12,7 @@
                         <input class="form-control" type="text" name="title" />
                     </div>
                     <div class="form-group">
-                        <label>Message</label>
+                        <label>Message1</label>
                         <textarea class="form-control" name="content"></textarea>
                     </div>
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">

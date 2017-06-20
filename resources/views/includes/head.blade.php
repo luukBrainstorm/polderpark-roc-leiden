@@ -28,7 +28,7 @@
 
 @section('menu')
     <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
+    <li><a href="#">About1</a></li>
     <li><a href="#">Polderpark</a></li>
     <li><a href="#">Blog</a></li>
     <li><a href="#">Contact</a></li>
