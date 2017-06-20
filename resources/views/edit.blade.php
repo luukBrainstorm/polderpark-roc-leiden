@@ -10,7 +10,7 @@
 <body>
 <form action="/post/edit/{{ $post->id }}/save" method="POST">
     <input type="text" value="{{ $post->title }}" name="title" />
-    <textarea name="content">{{ $post->content }}</textarea>
+    <textarea name="content">{{ $post->bericht }}</textarea>
     <input type="hidden" name="_token" value="{{ csrf_token() }}">
     <input type="submit" name="submit" value="submit" />
 </form>

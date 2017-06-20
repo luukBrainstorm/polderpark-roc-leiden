@@ -10,7 +10,7 @@ class dataController extends Controller  {
         $post = postModel::find($id);
 
         $post->title = $request->input('title');
-        $post->content = $request->input('content');
+        $post->bericht = $request->input('bericht');
 
         $post->save();
 
@@ -20,7 +20,7 @@ class dataController extends Controller  {
     public function insert(Request $request) {
         $post = new postModel();
         $post->title = $request->input('title');
-        $post->content = $request->input('content');
+        $post->bericht = $request->input('bericht');
         $post->save();
         return redirect('/?success=true');
     }
