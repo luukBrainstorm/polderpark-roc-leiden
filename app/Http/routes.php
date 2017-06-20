@@ -18,7 +18,7 @@ Route::get('/insert', function (){
     return view('insert');
 });
 Route::post('/insert/data', 'dataController@insert');
-Route::post('/post/edit/{id}/save', 'dataController@update');
+Route::post('/post/php/{id}/save', 'dataController@update');
 Route::get('/post/edit/{id}', 'dataController@view');
 
 Route::auth();

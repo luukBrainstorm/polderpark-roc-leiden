@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
                 <h1>Insert message</h1>
-                <form action="insert/data" method="POST" role="form">
+                <form action="{{url('insert/data')}}" method="POST" role="form">
                     <br style="clear:both">
                     <div class="form-group">
                         <label>Titel</label>
@@ -13,7 +13,7 @@
                     </div>
                     <div class="form-group">
                         <label>Message1</label>
-                        <textarea class="form-control" name="content"></textarea>
+                        <textarea class="form-control" name="bericht"></textarea>
                     </div>
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     <input type="submit" name="submit" value="submit" />
