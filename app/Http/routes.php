@@ -28,4 +28,4 @@ Route::get('/home', 'HomeController@index');
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
-// 1
+Route::get('/home', 'HomeController@showAll');
