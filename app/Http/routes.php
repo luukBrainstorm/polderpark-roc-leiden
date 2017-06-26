@@ -17,12 +17,11 @@ Route::get('/post/delete/{id}', 'dataController@delete');
 Route::get('/insert', function (){
     return view('insert');
 });
-Route::post('/insert/data', 'dataController@insert');
-Route::post('/post/php/{id}/save', 'dataController@update');
-Route::get('/post/edit/{id}', 'dataController@view');
 
 Route::auth();
-
+Route::post('/insert/data', 'dataController@insert');
+Route::post('/post/edit/{id}/save', 'dataController@update');
+Route::get('/post/edit/{id}', 'dataController@view');
 Route::get('/home', 'HomeController@index');
 
 Route::auth();

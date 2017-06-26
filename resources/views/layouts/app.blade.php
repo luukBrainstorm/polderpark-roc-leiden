@@ -49,8 +49,6 @@
                 <ul class="nav navbar-nav">
                     <li><a href="{{ url('/home') }}">Home</a></li>
                     <li><a href="{{ url('/insert') }}">insert</a></li>
-                    <li><a href="{{ url('/edit') }}">edit</a></li>
-                    <li><a href="{{ url('/delete') }}">delete</a></li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->

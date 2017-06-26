@@ -12,7 +12,7 @@
                 </div>
                 <div class="panel-body">
                 @foreach ($posts as $post)
-                    <p>Title: {{ $post->title }} <br/> Bericht: {{ $post->bericht }} <br/> <a href="post/{{ $post->id }}">Read more</a>
+                    <p>Title: {{ $post->title }} <br/> Bericht: {{ $post->bericht }} <br/> <a href="post/edit/{{ $post->id }}">Edit</a> or <a href="post/delete/{{ $post->id }}">Delete</a>
                     </p>
                 @endforeach
                 </div>
