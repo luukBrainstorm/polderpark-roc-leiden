@@ -11,20 +11,27 @@
 |
 */
 
-Route::get('/', 'dataController@viewAll');
-Route::get('/post/{id}', 'dataController@view');
-Route::get('/post/delete/{id}', 'dataController@delete');
-Route::get('/insert', function (){
-    return view('insert');
+
+Route::group(['middleware' => ['web']], function () {
+
+    Route::get('/', function () {
+        return view('welcome');
+    })->middleware('guest');
+
+    Route::get('/tasks', 'TaskController@index');
+    Route::post('/task', 'TaskController@store');
+    Route::delete('/task/{task}', 'TaskController@destroy');
+    Route::get('/', 'dataController@viewAll');
+    Route::get('/post/{id}', 'dataController@view');
+    Route::get('/post/delete/{id}', 'dataController@delete');
+    Route::get('/insert', function (){
+        return view('insert');
+    });
+
+    Route::auth();
+
+    Route::post('/insert/data', 'dataController@insert');
+    Route::post('/post/edit/{id}/save', 'dataController@update');
+    Route::get('/post/edit/{id}', 'dataController@view');
+
 });
-
-Route::auth();
-Route::post('/insert/data', 'dataController@insert');
-Route::post('/post/edit/{id}/save', 'dataController@update');
-Route::get('/post/edit/{id}', 'dataController@view');
-Route::get('/home', 'HomeController@index');
-
-Route::auth();
-
-Route::get('/home', 'HomeController@index');
-Route::get('/home', 'HomeController@showAll');
